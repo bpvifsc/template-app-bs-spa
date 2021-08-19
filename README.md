@@ -13,14 +13,15 @@ Disponível em: https://bpvifsc.github.io/template-app-bs-spa/
 4. adicionar a classe ```collapse``` em cada tag ```section``` com execeção do conteúdo que é apresentado inicialmente
 5. modificar o código do arquivo main.js para o seguinte
   ```
-    var pgAtual = "home";
+    var pgAtual = "#home";
     function mostraPagina(pg) {
         $(pgAtual).hide();
         $(pg).show();
         pgAtual = pg;
     }
   ```
-6. modificar as chamadas da função ```mostraPagina``` para o ```id``` definido nas tags ```section```
+6. modificar as chamadas da função ```mostraPagina``` para o ```id```(com o #) definido nas tags ```section```
+Ex.: ```onclick="mostraPagina('#equipe')"```
 
 
 
